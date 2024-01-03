@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Payment</title>
+</head>
+<body>
+    <h1>Add Payment</h1>
+    <form action="add_payment.php" method="POST">
+        <label for="studentId">Student ID:</label>
+        <input type="number" id="studentId" name="studentId" required><br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required><br><br>
+
+        <label for="paymentType">Payment Type:</label>
+        <select id="paymentType" name="paymentType" required>
+            <option value="Zelle">Zelle</option>
+            <option value="UPI">UPI</option>
+            <option value="CompanyAccount">Company Account</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+
+        <input type="submit" value="Add Payment">
+    </form>
+</body>
+</html>
